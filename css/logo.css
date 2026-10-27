@@ -1,0 +1,246 @@
+
+/* TENZIN Logo Presentation */
+
+:root {
+    --dusty-blue: #647D91;
+    --light-blue: #B5C6D0;
+    --ivory: #F7F5F0;
+    --dark-navy: #293B49;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--dark-navy);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: var(--dusty-blue);
+    padding: 16px 0;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: var(--ivory);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--ivory);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Hero */
+
+header {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.hero-logo {
+    display: block;
+    max-width: 220px;
+    max-height: 240px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--dusty-blue);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+}
+
+.lead {
+    color: var(--dusty-blue);
+    max-width: 620px;
+    font-size: 1.15rem;
+}
+
+/* Section headings */
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--light-blue);
+}
+
+/* Logo previews */
+
+.logo-preview {
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+}
+
+.logo-preview img {
+    display: block;
+    max-width: 100%;
+    max-height: 175px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.light-preview {
+    background-color: #ffffff;
+}
+
+.ivory-preview {
+    background-color: var(--ivory);
+}
+
+.blue-preview {
+    background-color: var(--dusty-blue);
+}
+
+.favicon-preview {
+        width: 110px !important;
+        height: 110px !important;
+        max-height: none !important;
+        image-rendering: auto;
+}
+
+.variation-number {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: var(--dusty-blue);
+    letter-spacing: 0.2em;
+    font-size: 0.85rem;
+}
+
+#variations h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+}
+
+#variations p:not(.variation-number) {
+    color: #667789;
+    font-size: 0.9rem;
+}
+
+/* Color palette */
+
+.color-swatch {
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 12px;
+}
+
+.dusty-blue {
+    background-color: var(--dusty-blue);
+}
+
+.light-blue {
+    background-color: var(--light-blue);
+}
+
+.ivory {
+    background-color: var(--ivory);
+}
+
+.dark-navy {
+    background-color: var(--dark-navy);
+}
+
+#colors p {
+    font-size: 0.9rem;
+}
+
+/* Usage guidelines */
+
+#guidelines ol {
+    padding-left: 24px;
+    color: #566b7d;
+}
+
+#guidelines li {
+    padding: 8px 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dusty-blue);
+    color: white;
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--ivory);
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    header {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+h1 {
+    letter-spacing: 0.1em;
+}
+
+.navbar .nav-link {
+    margin-left: 0;
+}
+
+.logo-preview {
+    height: 220px;
+}
+}
